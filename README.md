@@ -9,39 +9,35 @@ This is the backend API for the Medical Record Dashboard, built with ASP.NET Cor
 • git clone https://github.com/ayush4460/HFiles-Backend.git
 
 ### 2. Set Up MySQL Database
-• Create a database named medical_db in MySQL:
+Create a database named medical_db in MySQL:
 
-CREATE DATABASE medical_db;
+• CREATE DATABASE medical_db;
 
-• Add the connection string to appsettings.json:
+Add the connection string to appsettings.json:
 
-• In appsettings.json, configure the connection string to connect to your local MySQL database:
+In appsettings.json, configure the connection string to connect to your local MySQL database:
 
 {
-
   "ConnectionStrings": {
-  
     "DefaultConnection": "server=localhost;port=3306;user=root;password=yourpassword;database=medical_db"
-    
   }
-  
 }
 
 Replace yourpassword with the actual password for your MySQL root user.
 
 ### 3. Run the App
-dotnet restore
+• dotnet restore
 
-dotnet build
+• dotnet build
 
-dotnet run
+• dotnet run
 
 The API will be available at http://localhost:5138
 
 ### 4. Run Migrations
-dotnet ef migrations add InitialCreate
+• dotnet ef migrations add InitialCreate
 
-dotnet ef database update
+• dotnet ef database update
 
 This will create the required tables in the medical_db database.
 
@@ -55,19 +51,12 @@ This will create the required tables in the medical_db database.
 Create a new user account.
 
 Request body:
-
 {
-
   "fullName": "John Doe",
-  
   "email": "john@example.com",
-  
   "password": "yourpassword",
-  
   "phoneNumber": "1234567890",
-  
   "gender": "Male"
-  
 }
 
 
@@ -76,13 +65,9 @@ Request body:
 Authenticate and log in an existing user.
 
 Request body:
-
 {
-
   "email": "john@example.com",
-  
   "password": "yourpassword"
-  
 }
 
 
@@ -103,17 +88,11 @@ Get the profile information of the currently authenticated user.
 Update the profile information of the currently authenticated user.
 
 Request body:
-
 {
-
   "fullName": "John Doe",
-  
   "email": "john@example.com",
-  
   "phoneNumber": "0987654321",
-  
   "gender": "Male"
-  
 }
 
 
