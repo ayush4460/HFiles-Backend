@@ -46,59 +46,76 @@ This will create the required tables in the medical_db database.
 
 ### 🔐 Auth
 
-• POST /api/auth/signup
+#### POST /api/auth/signup
 
 Create a new user account.
 
 Request body:
+
 {
+
   "fullName": "John Doe",
+  
   "email": "john@example.com",
+  
   "password": "yourpassword",
+  
   "phoneNumber": "1234567890",
+  
   "gender": "Male"
+  
 }
 
 
-• POST /api/auth/login
+#### POST /api/auth/login
 
 Authenticate and log in an existing user.
 
 Request body:
+
 {
+
   "email": "john@example.com",
+  
   "password": "yourpassword"
+  
 }
 
 
-• POST /api/auth/logout
+#### POST /api/auth/logout
 
 Log out the currently authenticated user.
 
 
 ### 👤 User
 
-• GET /api/user/me
+#### GET /api/user/me
 
 Get the profile information of the currently authenticated user.
 
 
-• PUT /api/user/me
+#### PUT /api/user/me
 
 Update the profile information of the currently authenticated user.
 
 Request body:
+
 {
+
   "fullName": "John Doe",
+  
   "email": "john@example.com",
+  
   "phoneNumber": "0987654321",
+  
   "gender": "Male"
+  
 }
 
 
 ### 📄 Files
 
-• POST /api/file/upload
+#### POST /api/file/upload
 
 Upload a new file (PDF or image).
 
@@ -107,12 +124,12 @@ Request body:
 The file should be uploaded as multipart/form-data. You can use Postman or any HTTP client to test file uploads.
 
 
-• GET /api/file
+#### GET /api/file
 
 Get a list of all uploaded files.
 
 
-• DELETE /api/file/{id}
+#### DELETE /api/file/{id}
 
 Delete a file by its ID.
 
