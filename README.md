@@ -6,20 +6,25 @@ This is the backend API for the Medical Record Dashboard, built with ASP.NET Cor
 ## 🔧 Local Setup
 
 ### 1. Clone the Repository
-git clone https://github.com/ayush4460/HFiles-Backend.git
+• git clone https://github.com/ayush4460/HFiles-Backend.git
 
 ### 2. Set Up MySQL Database
-Create a database named medical_db in MySQL:
+• Create a database named medical_db in MySQL:
 
 CREATE DATABASE medical_db;
 
-Add the connection string to appsettings.json:
+• Add the connection string to appsettings.json:
 
-In appsettings.json, configure the connection string to connect to your local MySQL database:
+• In appsettings.json, configure the connection string to connect to your local MySQL database:
+
 {
+
   "ConnectionStrings": {
+  
     "DefaultConnection": "server=localhost;port=3306;user=root;password=yourpassword;database=medical_db"
+    
   }
+  
 }
 
 Replace yourpassword with the actual password for your MySQL root user.
