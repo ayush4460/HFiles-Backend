@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\AYUSH\\Desktop\\medical-dashboard\\backend\\wwwroot\\uploads\\05f917a3-986a-4446-b597-6abb6f5ac30e.pdf",
+      "PackagePath": "staticwebassets\\uploads\\05f917a3-986a-4446-b597-6abb6f5ac30e.pdf"
+    },
+    {
+      "Id": "C:\\Users\\AYUSH\\Desktop\\medical-dashboard\\backend\\wwwroot\\uploads\\071a7b9d-8230-40ea-b4ec-a5de83573f10.pdf",
+      "PackagePath": "staticwebassets\\uploads\\071a7b9d-8230-40ea-b4ec-a5de83573f10.pdf"
+    },
+    {
+      "Id": "C:\\Users\\AYUSH\\Desktop\\medical-dashboard\\backend\\wwwroot\\uploads\\95f494cd-1c68-455f-aa68-bb1ca9ad7d05.pdf",
+      "PackagePath": "staticwebassets\\uploads\\95f494cd-1c68-455f-aa68-bb1ca9ad7d05.pdf"
+    },
+    {
+      "Id": "C:\\Users\\AYUSH\\Desktop\\medical-dashboard\\backend\\wwwroot\\uploads\\bdf1544b-f36a-4f3d-8279-bb06deaf4db1.pdf",
+      "PackagePath": "staticwebassets\\uploads\\bdf1544b-f36a-4f3d-8279-bb06deaf4db1.pdf"
+    },
+    {
+      "Id": "C:\\Users\\AYUSH\\Desktop\\medical-dashboard\\backend\\wwwroot\\uploads\\c56f5adb-7623-4eb0-9684-cfc0e5695f70.pdf",
+      "PackagePath": "staticwebassets\\uploads\\c56f5adb-7623-4eb0-9684-cfc0e5695f70.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.backend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.backend.props",
+      "PackagePath": "build\\backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.backend.props",
+      "PackagePath": "buildMultiTargeting\\backend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.backend.props",
+      "PackagePath": "buildTransitive\\backend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
