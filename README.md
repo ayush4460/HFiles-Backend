@@ -18,9 +18,12 @@ Add the connection string to appsettings.json:
 In appsettings.json, configure the connection string to connect to your local MySQL database:
 
 {
+
   "ConnectionStrings": {
+  
     "DefaultConnection": "server=localhost;port=3306;user=root;password=yourpassword;database=medical_db"
   }
+  
 }
 
 Replace yourpassword with the actual password for your MySQL root user.
@@ -46,7 +49,7 @@ This will create the required tables in the medical_db database.
 
 ### 🔐 Auth
 
-#### POST /api/auth/signup
+1. POST /api/auth/signup
 
 Create a new user account.
 
@@ -67,7 +70,7 @@ Request body:
 }
 
 
-#### POST /api/auth/login
+2. POST /api/auth/login
 
 Authenticate and log in an existing user.
 
@@ -82,19 +85,19 @@ Request body:
 }
 
 
-#### POST /api/auth/logout
+3. POST /api/auth/logout
 
 Log out the currently authenticated user.
 
 
 ### 👤 User
 
-#### GET /api/user/me
+1. GET /api/user/me
 
 Get the profile information of the currently authenticated user.
 
 
-#### PUT /api/user/me
+2. PUT /api/user/me
 
 Update the profile information of the currently authenticated user.
 
@@ -115,7 +118,7 @@ Request body:
 
 ### 📄 Files
 
-#### POST /api/file/upload
+1. POST /api/file/upload
 
 Upload a new file (PDF or image).
 
@@ -124,12 +127,12 @@ Request body:
 The file should be uploaded as multipart/form-data. You can use Postman or any HTTP client to test file uploads.
 
 
-#### GET /api/file
+2. GET /api/file
 
 Get a list of all uploaded files.
 
 
-#### DELETE /api/file/{id}
+3. DELETE /api/file/{id}
 
 Delete a file by its ID.
 
@@ -138,9 +141,13 @@ Delete a file by its ID.
 ## 🛠️ Tools and Technologies Used
 
 • ASP.NET Core 8 for building the backend API
+
 • Entity Framework Core for interacting with the database
+
 • MySQL for the database
+
 • JWT Authentication for secure API access
+
 • Postman for testing APIs
 
 
