@@ -23,4 +23,4 @@ EXPOSE 80
 COPY --from=build /app/publish .
 
 # Set the entry point for the container
-ENTRYPOINT ["dotnet", "HFiles-Backend.dll"]
+ENTRYPOINT ["dotnet", "backend.dll"]
