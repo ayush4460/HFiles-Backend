@@ -29,7 +29,7 @@ namespace backend.Controllers
                 Email = user.Email,
                 Gender = user.Gender,
                 PhoneNumber = user.PhoneNumber,
-                PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash) // assuming raw password is in PasswordHash
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword(user.PasswordHash) 
             };
 
             _context.Users.Add(newUser);
